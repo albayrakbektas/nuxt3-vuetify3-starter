@@ -1,22 +1,10 @@
 <template>
   <v-app>
-    <v-img
-      class="position-absolute"
-      src="https://picsum.photos/1200/600"
-      height="100vh"
-      width="100vw"
-      cover
-    ></v-img>
+    <v-img class="position-absolute" src="/bar_bg.jpeg" height="100vh" width="100vw" cover></v-img>
 
     <v-container class="d-flex flex-column align-center justify-start custom-container">
       <div style="position: relative; height: 35vh; width: 100%">
-        <v-img
-          class="custom-img"
-          src="https://picsum.photos/600/200"
-          height="35vh"
-          width="100%"
-          cover
-        />
+        <v-img class="custom-img" src="/reservation_img.jpeg" height="35vh" width="100%" cover />
         <div class="brand-logo-container" style="position: absolute; width: 100%; top: 0">
           <div class="brand-logo-inner">
             <div class="brand-logo"></div>
