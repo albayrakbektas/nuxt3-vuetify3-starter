@@ -192,7 +192,7 @@ const submit = async () => {
   };
   try {
     // Fetch ile post isteği yapılıyor.
-    const response = await fetch("https://theportpubserver.vercel.app/api/submitForm", {
+    const response = await fetch("https://lawomerblogserver.vercel.app/api/submitForm", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
