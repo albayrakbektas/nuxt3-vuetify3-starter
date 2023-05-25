@@ -6,8 +6,15 @@
       <div style="position: relative; height: 35vh; width: 100%">
         <v-img class="custom-img" src="/reservation_img.jpeg" height="35vh" width="100%" cover />
         <div class="brand-logo-container" style="position: absolute; width: 100%; top: 0">
-          <div class="brand-logo-inner">
-            <div class="brand-logo"></div>
+          <div class="brand-logo-inner" style="position; relative">
+            <!-- <div class="brand-logo"></div> -->
+            <v-img
+              src="the_port_pub_tr.png"
+              alt="brand logo"
+              width="100%"
+              cover
+              style="position; absolute"
+            />
           </div>
         </div>
       </div>
@@ -295,8 +302,7 @@ const convert = (str: string) => {
   width: 100%;
   max-width: 240px;
   max-height: 100px;
-  background: url("https://1.image.cdn.tablecheck.com/unsafe/fit-in/480x200/smart/https%3A%2F%2Fcdn0.tablecheck.com%2Fbooking_themes%2F628300e9c052c80045583631%2Fdark_logo_images%2Foriginal%2F3dbd0a33.png%3F1682671556")
-    center center / contain no-repeat;
+  background: url("/the_port_pub.png") center center / contain no-repeat;
 }
 .v-card {
   background-color: #000000 !important;
