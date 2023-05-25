@@ -1,8 +1,8 @@
 import vuetify from "vite-plugin-vuetify";
 
 // PWA Config
-const title = "Vuetify 3 + Nuxt 3 Starter";
-const shortTitle = "Vuetify 3 + Nuxt 3 Starter";
+const title = "ThePortPub";
+const shortTitle = "ThePortPub";
 const description =
   "Template to get you up and running with Nuxt 3 & Vuetify 3";
 const image = "https://vuetify3nuxt3starter.behonbaker.com/starter.png";
@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   css: ["@/assets/main.scss"],
   // enable takeover mode
   typescript: { shim: false },
-  build: { transpile: ["vuetify"] },
+  build: { transpile: ["vuetify", "@vuepic/vue-datepicker"] },
   modules: [
     "@kevinmarrec/nuxt-pwa",
     async (options, nuxt) => {
@@ -24,11 +24,13 @@ export default defineNuxtConfig({
       );
     },
   ],
-
+  buildModules: [
+    "~/plugins/vue-pic-vue-datepicker.ts"
+  ],
   app: {
     head: {
-      title: "Vuetify 3 + Nuxt 3 Starter",
-      titleTemplate: "%s | Vuetify 3 + Nuxt 3 Starter",
+      title: "THEPORTPUB",
+      titleTemplate: "%s | Mersin",
       link: [
         { rel: "stylesheet", href: "https://rsms.me/inter/inter.css" },
         { rel: "preconnect", href: "https://rsms.me/" },

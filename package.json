@@ -17,6 +17,7 @@
     "vuetify": "^3.1.15"
   },
   "dependencies": {
+    "@vuepic/vue-datepicker": "^5.1.2",
     "vite-plugin-vuetify": "^1.0.2"
   }
 }

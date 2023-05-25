@@ -1,12 +1,73 @@
 $family: "Inter var", "Inter", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
   Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-
+$mainColor: rgb(178, 141, 73);
 @use "vuetify" with (
   $body-font-family: $family
 );
 
+html {
+  overflow-y: auto !important; 
+}
+
 :root {
   font-family: "Inter", sans-serif;
+  --v-scrollbar-offset: 0;
+  -webkit-padding-end: 0 !important;
+   padding-inline-end: 0 !important;
+}
+.v-dialog__content--active {
+  --v-scrollbar-offset: 0px !important;
+  -webkit-padding-end: 0 !important;
+   padding-inline-end: 0 !important;
+}
+.v-overlay-scroll-blocked {
+  -webkit-padding-end: 0 !important;
+   padding-inline-end: 0 !important;
+}
+#my-datepicker {
+  * {color: rgb(178, 141, 73);
+    background-color: #000;}
+  .dp__active_date {
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: auto;
+  }
+  .dp__calendar_item {
+    &:hover {
+      border-radius: 50%;
+      background-color: rgba($color: #fff, $alpha: 0.1);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .v-dialog > .v-overlay__content {
+    max-height: 100vh !important;
+    max-width: 100vw !important;
+    bottom: 0;
+    margin: 0 !important;
+  }
+}
+.dp__menu.dp__relative.dp__theme_light {
+  border: none;
+}
+.v-toolbar-title__placeholder {
+  color: $mainColor;
+}
+@media (min-width: 768px) {
+  .v-overlay__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 !important;
+  }
+  .v-card {
+    width: 25vw !important;
+  }
+  .v-card-text {
+    height: auto !important;
+    width: auto !important;
+  }
 }
 @supports (font-variation-settings: normal) {
   :root {
