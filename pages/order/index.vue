@@ -5,15 +5,15 @@ const drinks = [
   {
     type: 'Biralar',
     items: [
-      { name: 'Carlsberg', description: 'Ürün açıklaması...', price: '65' },
-      { name: 'Tuborg', description: 'Ürün açıklaması...', price: '60' },
+      { name: 'Carlsberg', description: 'Ürün açıklaması...', price: '65', imgSrc: 'carlsberg.jpeg' },
+      { name: 'Tuborg', description: 'Ürün açıklaması...', price: '60', imgSrc: 'tuborg_gold.jpeg' },
     ],
   },
   {
     type: 'Kokteyller',
     items: [
-      { name: 'Long Island', description: 'Ürün açıklaması...', price: '200' },
-      { name: 'Mojito', description: 'Ürün açıklaması...', price: '150' },
+      { name: 'Long Island', description: 'Ürün açıklaması...', price: '200', imgSrc: 'long_island.jpeg' },
+      { name: 'Mojito', description: 'Ürün açıklaması...', price: '150', imgSrc: 'mojito.jpeg' },
       { name: 'Cosmopolitan', description: 'Ürün açıklaması...', price: '150' },
       { name: 'Cuba Libre', description: 'Ürün açıklaması...', price: '150' },
       { name: 'Tom Callino', description: 'Ürün açıklaması...', price: '150' },
@@ -24,8 +24,8 @@ const drinks = [
   {
     type: 'Shotlar',
     items: [
-      { name: 'Tequila', description: 'Ürün açıklaması...', price: '70' },
-      { name: 'Viski', description: 'Ürün açıklaması...', price: '75' },
+      { name: 'Tequila', description: 'Ürün açıklaması...', price: '70', imgSrc: 'tequila_shot.jpeg' },
+      { name: 'Viski', description: 'Ürün açıklaması...', price: '75', imgSrc: 'whiskey_shot.webp' },
       { name: 'Vodka', description: 'Ürün açıklaması...', price: '60' },
       { name: 'Rom', description: 'Ürün açıklaması...', price: '60' },
       { name: 'Cin', description: 'Ürün açıklaması...', price: '60' },
@@ -58,7 +58,7 @@ const selectItem = (item: {name: string; description: string; price: string}) =>
 </script>
 
 <template>
-  <div class="flex flex-col items-center" style="background: #b28d49; height: 100vh">
+  <div class="flex flex-col items-center" style="background: #b28d49; min-height: 100vh">
     <img src="/reservation_img.jpeg" alt="Resim" class="w-full" style="height: 10rem; width: 100vw" />
 
     <div class="flex justify-between p-2 w-100 align-center">
@@ -102,7 +102,7 @@ const selectItem = (item: {name: string; description: string; price: string}) =>
           </div>
           <img
             :class="['h-100 object-cover', selectedItem.name === item.name && selectedItem.active ? 'w-100' : 'w-33']"
-            src="/reservation_img.jpeg"
+            :src="'/' + item.imgSrc"
             alt="Ürün görseli"
           />
         </button>
