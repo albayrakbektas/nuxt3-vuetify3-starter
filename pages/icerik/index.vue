@@ -1,20 +1,25 @@
 <template>
   <v-app>
-    <v-img class="position-absolute" src="/bar_bg.jpeg" height="100vh" width="100vw" cover></v-img>
+    <v-img
+      class="position-absolute"
+      src="https://picsum.photos/1200/600"
+      height="100vh"
+      width="100vw"
+      cover
+    ></v-img>
 
     <v-container class="d-flex flex-column align-center justify-start custom-container">
       <div style="position: relative; height: 35vh; width: 100%">
-        <v-img class="custom-img" src="/reservation_img.jpeg" height="35vh" width="100%" cover />
+        <v-img
+          class="custom-img"
+          src="https://picsum.photos/600/200"
+          height="35vh"
+          width="100%"
+          cover
+        />
         <div class="brand-logo-container" style="position: absolute; width: 100%; top: 0">
-          <div class="brand-logo-inner" style="position: relative">
-            <!-- <div class="brand-logo"></div> -->
-            <v-img
-              src="the_port_pub_tr.png"
-              alt="brand logo"
-              width="100%"
-              cover
-              style="position: absolute"
-            />
+          <div class="brand-logo-inner">
+            <div class="brand-logo"></div>
           </div>
         </div>
       </div>
@@ -192,7 +197,7 @@ const submit = async () => {
   };
   try {
     // Fetch ile post isteği yapılıyor.
-    const response = await fetch("https://lawomerblogserver.vercel.app/api/submitForm", {
+    const response = await fetch("https://portserver.vercel.app/api/submitForm", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -213,7 +218,6 @@ const submit = async () => {
     alert("Rezervasyon isteğiniz gönderilirken bir hata oluştu.");
   }
 };
-
 const incrementGuestCount = () => {
   guests.value++;
 };
@@ -249,7 +253,7 @@ const convert = (str: string) => {
 }
 
 .custom-field {
-  color: #b28d49 !important;
+  color: rgb(178, 141, 73) !important;
 }
 
 .custom-btn {
@@ -302,7 +306,8 @@ const convert = (str: string) => {
   width: 100%;
   max-width: 240px;
   max-height: 100px;
-  background: url("/the_port_pub.png") center center / contain no-repeat;
+  background: url("https://1.image.cdn.tablecheck.com/unsafe/fit-in/480x200/smart/https%3A%2F%2Fcdn0.tablecheck.com%2Fbooking_themes%2F628300e9c052c80045583631%2Fdark_logo_images%2Foriginal%2F3dbd0a33.png%3F1682671556")
+    center center / contain no-repeat;
 }
 .v-card {
   background-color: #000000 !important;

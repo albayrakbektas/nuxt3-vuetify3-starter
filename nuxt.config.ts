@@ -16,6 +16,7 @@ export default defineNuxtConfig({
   typescript: { shim: false },
   build: { transpile: ["vuetify", "@vuepic/vue-datepicker"] },
   modules: [
+    '@nuxtjs/tailwindcss',
     "@kevinmarrec/nuxt-pwa",
     async (options, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config) =>
@@ -29,6 +30,14 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
+      script: [
+        {
+          src:"https://unpkg.com/@tinybirdco/flock.js",
+          defer: true,
+          'data-host':"https://api.tinybird.co",
+          'data-token':"p.eyJ1IjogImJmNGE1NGU5LWExYTMtNGZmMC1hZDA0LThmYWE1N2Y0ZDgxMSIsICJpZCI6ICI3Y2Y2MjI2NS03NzJjLTRlMjctOGYyMC1hZGUzNmM3ZjM3YmIifQ.Oz57esvRowIX90p9X8M3hL6JB1t0u8Wv-F-en5olNiI"
+        }
+      ],
       title: "THEPORTPUB",
       titleTemplate: "%s | Mersin",
       link: [

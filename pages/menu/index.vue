@@ -6,14 +6,14 @@
       <div style="position: relative; height: 35vh; width: 100%">
         <v-img class="custom-img" src="/reservation_img.jpeg" height="35vh" width="100%" cover />
         <div class="brand-logo-container" style="position: absolute; width: 100%; top: 0">
-          <div class="brand-logo-inner" style="position: relative">
+          <div class="brand-logo-inner" style="position; relative">
             <!-- <div class="brand-logo"></div> -->
             <v-img
               src="the_port_pub_tr.png"
               alt="brand logo"
               width="100%"
               cover
-              style="position: absolute"
+              style="position; absolute"
             />
           </div>
         </div>
