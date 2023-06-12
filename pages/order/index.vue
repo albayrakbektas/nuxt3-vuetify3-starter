@@ -98,7 +98,7 @@ const selectItem = (item: {name: string; description: string; price: string}) =>
             :style="{marginBottom: selectedItem.name === item.name && selectedItem.active ? '1rem' : '0'}"
           >
             <h2 class="text-lg font-bold">{{ item.name }}</h2>
-            <p class="text-sm">{{ item.description }}</p>
+            <p class="text-sm giveMeEllipsis" :class="{'giveMeEllipsisDesktop': selectedItem.name === item.name && selectedItem.active}">{{ item.description }}</p>
             <p class="text-xs text-gray-500">{{ item.price }} TL</p>
           </div>
           <img
@@ -123,5 +123,17 @@ const selectItem = (item: {name: string; description: string; price: string}) =>
 }
 .active {
   width: 98% !important;
+}
+.giveMeEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-height: 1.2rem; /* fallback */
+  max-height: 3rem; /* fallback */
+}
+.giveMeEllipsisDesktop {
+  -webkit-line-clamp: 5;
 }
 </style>
