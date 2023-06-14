@@ -14,11 +14,11 @@ const drinks = [
     items: [
       { name: 'Long Island', description: 'Vodka, Rom, Cin, Tekila, Portakal likörü, kola, limon', price: '200', imgSrc: 'long_island.jpeg' },
       { name: 'Mojito', description: 'Rom, esmer şeker, nane, lime, soda', price: '150', imgSrc: 'mojito.jpeg' },
-      { name: 'Cosmopolitan', description: 'Vodka, portakal likörü, kızılcık suyu, limon suyu', price: '150' },
-      { name: 'Cuba Libre', description: 'Rom, kola, limon suyu', price: '150' },
-      { name: 'Tom Callins', description: 'Cin, tatlı ve ekşi, soda', price: '150' },
-      { name: 'Tequila Sunrise', description: 'Tekila, portal likörü, portakal suyu, nar şurubu', price: '160' },
-      { name: 'Lynchburg Lemonade', description: 'Viski, portakal likörü, sprite, limon suyu', price: '150' },
+      { name: 'Cosmopolitan', description: 'Vodka, portakal likörü, kızılcık suyu, limon suyu', price: '150', imgSrc: 'cosmopolitan.jpeg' },
+      { name: 'Cuba Libre', description: 'Rom, kola, limon suyu', price: '150', imgSrc: 'cuba_libre.jpeg' },
+      { name: 'Tom Collins', description: 'Cin, tatlı ve ekşi, soda', price: '150', imgSrc: 'tom_collins.jpeg' },
+      { name: 'Tequila Sunrise', description: 'Tekila, portal likörü, portakal suyu, nar şurubu', price: '160', imgSrc: 'tequila_sunrise.jpeg' },
+      { name: 'Lynchburg Lemonade', description: 'Viski, portakal likörü, sprite, limon suyu', price: '150', imgSrc: 'lynchburg_lemonade.jpeg' },
     ],
   },
   {
@@ -26,10 +26,10 @@ const drinks = [
     items: [
       { name: 'Tequila', description: 'Sombrero, Olmeca', price: '70', imgSrc: 'tequila_shot.jpeg' },
       { name: 'Viski', description: 'Chivas, Jack Daniels, Red Label, Black Label, Vat69', price: '75', imgSrc: 'whiskey_shot.webp' },
-      { name: 'Vodka', description: 'Votka 1967', price: '60' },
-      { name: 'Rom', description: 'Captain Morgan, Bacardi', price: '60' },
-      { name: 'Cin', description: 'Gilbey\'s, Gordon\'s', price: '60' },
-      { name: 'Likör', description: 'Jagermeister', price: '65' },
+      { name: 'Vodka', description: 'Votka 1967', price: '60', imgSrc: 'tequila_shots.jpeg' },
+      { name: 'Rom', description: 'Captain Morgan, Bacardi', price: '60', imgSrc: 'tequila_shots.jpeg' },
+      { name: 'Cin', description: 'Gilbey\'s, Gordon\'s', price: '60', imgSrc: 'tequila_shots.jpeg' },
+      { name: 'Likör', description: 'Jagermeister', price: '65', imgSrc: 'jager_shot.jpeg' },
     ],
   },
 ];
